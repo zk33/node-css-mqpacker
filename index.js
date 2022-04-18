@@ -139,7 +139,7 @@ module.exports = (options) => {
 	};
 	return {
 		postcssPlugin: pkg.name,
-		Once(css, { list }) {
+		OnceExit(css, { list }) {
 			const queries = {};
 			const queryLists = [];
 
